@@ -29,7 +29,7 @@ function getComputerChoice() {
             break
     }
 }
-console.log(getComputerChoice())
+
 function getHumanChoice() {
     let humanChoice = prompt('Please enter your choice: rock, paper, or scissors.')
     humanChoice = humanChoice.toLowerCase()
@@ -39,7 +39,7 @@ function getHumanChoice() {
     return 'You entered an invalid choice. Please enter rock, paper, or scissors.'
     }
 }
-console.log(getHumanChoice())
+
 
 let humanScore = 0
 let computerScore = 0
@@ -70,12 +70,7 @@ function playRound(humanChoice, getComputerChoice){
     }
 }
 
-console.log(playRound('rock', 'scissors'))
-console.log(playRound('scissors', 'rock'))
-console.log(playRound('scissors', 'paper'))
-console.log(playRound('paper', 'scissors'))
-console.log(playRound('paper', 'rock'))
-console.log(playRound('rock', 'paper'))
+
 
 function playGame(){
     for(let i = 0; i < 5; i++){
